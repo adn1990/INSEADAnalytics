@@ -87,12 +87,21 @@ pnl_plot(SPY)
 3. *(Extra points)* What if we want to also see the returns of another company, say Yahoo!, in the same period? Can you get that data and report the statistics for Yahoo!'s stock, too? 
 
 **Your Answers here:**
+<br> 1. mytickers = c("SPY", "AAPL") from dataSet1.R
 <br>
+2. 
 <br>
-<br>
-<br>
+Cumulative: round(100*sum(StockReturns[,"AAPL"]),1)
 
-<hr>
+Average daily: round(100*mean(StockReturns[,"AAPL"]),3)
+
+Standard deviation: round(100*sd(StockReturns[,"AAPL"]),3)
+
+3. We need to change ad add Yahoo in the dataSet1.R
+
+mytickers = c("SPY", "AAPL","YHOO") 
+
+<br>
 <hr>
 
 ### Part II: Simple Matrix Manipulations
@@ -129,7 +138,20 @@ We can also transpose the matrix of returns to create a new "horizontal" matrix.
 
 **Your Answers here:**
 <br>
+1.
+nrow(transposedData)
+
+ncol(transposedData)
+
 <br>
+2.
+
+```{r echo=FALSE, comment=NA, warning=FALSE, message=FALSE,results='asis',fig.align='center', fig=TRUE}
+transposedData = t(StockReturns)
+portfolio = apply(transposedData,2,mean)
+names(portfolio) <- colnames(transposedData)
+pnl_plot(portfolio)
+```
 <br>
 <br>
 
@@ -148,9 +170,12 @@ This is an important step and will get you to think about the overall process on
 **Your Answers here:**
 <br>
 <br>
+1. We need to change the start date in the code
+startDate = "2001-01-01"
 <br>
 <br>
-
+2. we need to add the simboles of companies to myticket, for example:
+mytickers = c("SPY", "AAPL","YHOO" , "TSLA", "FB", "MSFT")
 <hr>
 <hr>
 
@@ -181,8 +206,14 @@ myData + StockReturns[1:40,]
 
 **Your Answers here:**
 <br>
+1. We get 20, because it is counting the number of entries
+
+> sum(myData != StockReturns[1:20,])
+[1] 20
+> View(myData)
 <br>
 <br>
+2. It gives error because it is trying to add some data that have different formats separated by commas. In addition, the function asks to sum 40 rows when we only have 20 in the data set
 <br>
 
 <hr>
