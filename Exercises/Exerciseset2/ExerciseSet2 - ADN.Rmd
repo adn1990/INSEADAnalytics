@@ -162,20 +162,20 @@ iprint.df(show_data, scale=TRUE)
 1. 6 principal components are needed to explain at least 50% of the variance
 2. The highest value is 0.93
 3. We can interpret them as:
-+ Component 1: US Bonds
-+ Component 2: Currencies
-+ Component 3: European stock market indexes
-+ Component 4: North American stock market indexes
-+ Component 5: Euro Bonds
-+ Component 6: Oil prices
-+ Component 7: Industrial Metal prices
-+ Component 8: Food commodities
-+ Component 9: Precious metal prices
-+ Component 10: Japanese stock market indexes
+* Component 1: US Bonds
+* Component 2: Currencies
+* Component 3: European stock market indexes
+* Component 4: North American stock market indexes
+* Component 5: Euro Bonds
+* Component 6: Oil prices
+* Component 7: Industrial Metal prices
+* Component 8: Food commodities
+* Component 9: Precious metal prices
+* Component 10: Japanese stock market indexes
 
 
 4. 
-+ a) Pre-Crisis Data
+a) Pre-Crisis Data
 
 ```{r echo=TRUE, tidy=TRUE}
 
@@ -198,7 +198,7 @@ iprint.df(show_data, scale=TRUE)
 ```
 
 
-+ b) Crisis Data
+b) Crisis Data
 
 ```{r echo=TRUE, tidy=TRUE}
 
@@ -222,12 +222,8 @@ iprint.df(show_data, scale=TRUE)
 
 
 
-5. From the data, it is possible to see that returns look more correlated during crisis. Also, data are much more concentrated in component 1, and the value of the futures is more heavily correlated on the US Treasury market. On the other hand, during the bull market, the concentration is much less at the top.
-*
-*
-*
-*
-*
+5 From the data, it is possible to see that returns look more correlated during crisis. Also, data are much more concentrated in component 1, and the value of the futures is more heavily correlated on the US Treasury market. On the other hand, during the bull market, the concentration is much less at the top.
+
 
 # A Simple Futures Trend Following Strategy
 
