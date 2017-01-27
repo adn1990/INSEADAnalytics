@@ -285,7 +285,7 @@ How does this compare with **existing CTA products** such as [this one from Soci
 
 **Answers**
 
-*
+
 1. The first part of the code is used to normalize the futures table. It shows for all cells 0 values. Next, the MAfreq variable creates a range of numbers which starts at 10 and increments by 20 until 250. Next, a positive or negative sign is created by an iterator that goes through each column and, according to future data. This depicts the predicted trajectory and the "vote sign". $1 is add to each entry in lines 193-198 . Then this is multiplied by the vote value.
 
 
