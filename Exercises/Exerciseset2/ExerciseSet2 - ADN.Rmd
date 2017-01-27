@@ -15,7 +15,7 @@ output:
 always_allow_html: yes
 ---
 
-> **IMPORTANT**: Please make sure you create a copy of this file with a customized name, so that your work (e.g. answers to the questions) is not over-written when you pull the latest content from the course github. 
+> **IMPORTANT**: Please make sure you create a copy of this file with a customized name, so that your work (e.g. answers to the questions) is not over-written when you pull the latest content from the course github... 
 
 ```{r setuplibraries, echo=FALSE, message=FALSE}
 suppressWarnings(source("../../AnalyticsLibraries/library.R"))
